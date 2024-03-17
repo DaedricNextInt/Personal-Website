@@ -2,101 +2,7 @@
 <html>
 <head>
   <title>Wilkommen!</title>
-  <style>
-    body {
-      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Johan_Christian_Dahl_-_View_of_Dresden_by_Moonlight_-_Google_Art_Project.jpg/2560px-Johan_Christian_Dahl_-_View_of_Dresden_by_Moonlight_-_Google_Art_Project.jpg");
-      background-size: cover;
-	  margin: 0px;
-    }
-
-    .startPage {
-      position: absolute;
-      right: 3%;
-	  top: 3%;
-    }
-
-    /* Define a floating animation */
-    @keyframes floating {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
-
-    /* Apply the floating animation to the image */
-    .startPage img {
-      animation: floating 4s ease-in-out infinite; /* Adjust duration and easing as needed */
-    }
-	
-	
-	
-	/*TEXT BOX STARTS HERE*/
-	
-	
-	
-	.textBox {
-    position: absolute;
-    left: 50%;		/*Center */
-	transform: translateX(-50%);
-    top: 40%;
-    color: white;
-    border: 1px solid white; /* Reduced border width */
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-right: 1%;
-    padding-left: 1%;
-	text-align: center;
-	
-}
-
-	 .title h1 {
-      font-size: 24px; /* Adjust font size for mobile */
-    }
-
-	.buttons{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		margin-top: 10px;
-	}
-	
-	.buttons a{
-		margin: 5px;
-		padding: 10px 20px;
-		background-color: rgba(255, 255, 255, 0.2);
-		color: white;
-		text-decoration: none;
-		border: 1px solid white;
-	}
-	
-	.buttons :hover {
-	transform:scale(1.1);
-			z-index:2;
-	}
-	
-	.footer {
-	position: absolute;
-	top: 97%;
-	color: white;
-	
-	}
-	.footer :visited{
-	color: red;
-	
-	}
-	.footer :hover{
-	color:white;
-	
-	}
-	
-	
-	
-  </style>
+ <link rel="stylesheet" href="portfolio.css">
   <script type="text/javascript" src="https://w.24timezones.com/c.js?l=c1220&amp;t=d&amp;lang=en"></script>
 </head>
 <body>
@@ -115,8 +21,8 @@
 	<h1> Welcome to my website </h2>
 	</div>
 	<div class ="buttons">
-	<a href="file:///C:/Users/19690/Desktop/Personal%20Website/about_me.html">About me</a>
-	<a href="#">Resume</a>
+        <a href="about.html">About me</a>
+        <a href="#">Resume</a>
 	<a href="#">Projects</a>
 	<a href="https://github.com/DaedricNextInt">Github</a>
 	<!--<a href="#"></a> -->
