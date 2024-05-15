@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About me</title>
+  <style>
+  
+	 body 
+   {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Johan_Christian_Dahl_-_View_of_Dresden_by_Moonlight_-_Google_Art_Project.jpg/2560px-Johan_Christian_Dahl_-_View_of_Dresden_by_Moonlight_-_Google_Art_Project.jpg");
+      background-size: cover;
+	  margin: 0px;
+    }
+
+
+    /* Text Box */
+    .textBox 
+    {
+    position: absolute;
+    left: 50%;		/*Center */
+	  transform: translateX(-50%);
+    top: 10%;
+    color: white;
+    border: 1px solid white; /* Reduced border width */
+    padding-top: 25%;
+    padding-bottom: 7%;
+    padding-right: 30%;
+    padding-left: 30%;
+	  text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    }
+    /*These are for the navigation links*/
+    .navLinks
+    {
+      position: absolute;
+      left: 15%;
+      transform: translateX(-50%); /* center */
+      top: 25%; 
+      color: white;
+      text-align: center; 
+    }
+
+    .navLinks a 
+    {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 50px;
+      font-size: 2em;
+    }
+    /*This is the "About" title*/
+    .miniTitle
+    {
+      position: absolute;
+      left: 22%;
+      top:3%;
+      color: white;
+    }
+
+    /*This is where the main text will be*/
+    .title
+    {
+      position: absolute;
+      top: 15%;
+      right: -5%;
+      left: 50%;
+      transform: translateX(-50%);
+      
+      color: white;
+    }
+    /* IDK if I need this
+    .title:visited {
+      color : white;
+    }
+    */
+  
+    .img1 
+    {
+      position: absolute;
+      top: 20%;
+      left: 66%;
+      transform: translateX(-50%);
+      width: 300px; /* Set the width of the cropped image */
+      height: 300px; /* Set the height of the cropped image */
+      clip-path: circle(50%); /* Apply circular clipping */
+    }
+
+    .img1 img 
+    {
+      border-radius: 100px;
+    }
+    /*This controls the icons*/
+    .icons
+    {
+      position: absolute;
+      top: 53%;
+      
+      left: 28%;
+      transform: translateX(-50%);
+    }
+
+    .icon 
+    {
+      margin-right: 20px;
+    }
+
+    /*This is the availibility status*/
+    .status
+    {
+      position: absolute;
+      top: 54%;
+      left: 66%;
+      transform: translateX(-50%);
+      color: white;
+    }
+
+    .status .indicator
+    {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: greenyellow;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    .footer 
+    {
+	position: absolute;
+	top: 97%;
+	color: white;
+    left: 50%;
+    transform: translateX(-50%);
+	
+	}
+	.footer :visited
+  {
+	color: white;
+	
+	}
+	.footer :hover
+  {
+	color:white;
+	
+	}
+
+  </style> 
+</head>
+<body>
+
+
+  <div class="textBox">
+ 
+  </div>
+<div class="title">
+  <h2>  Hello, <br/><br/>
+
+    My name is Malcom Myers.<br/> 
+    I am currently an undergrad at <br/>
+    Arizona State University pursing <br/>
+    a computer science degree! <br/>
+    I’m a very passionate programmer as <br/>
+    I’ve been creating websites and building <br/>
+    programs since Highschool.
+
+    <br/>
+    <br/>
+    Contact me <a href="contact.html">here</a>
+    </h2>
+  
+</div> 
+
+
+
+
+
+<div class="navLinks">
+
+  <a href="index.html">Home</a>
+	<a href="Resume_apply.pdf">Resume</a>
+  <a href="https://github.com/DaedricNextInt">Github</a>
+	<a href="contact.html">Contact</a>
+	
+</div>
+
+<div class="miniTitle">
+  <h1>About</h1>
+
+</div>
+
+<div class = "img1">
+  <img src="_DSC9508.jpg" alt="Chad" width="300" height="400">
+</div>
+
+<div class ="icons">
+
+  <a href="https://www.instagram.com/daedric___/">
+    <img src="icon1.png" alt="Icon 1" class="icon" width="50" height="50">
+  </a>
+  <a href="https://github.com/DaedricNextInt">
+    <img src="icon2.png" alt="Icon 1" class="icon" width="50" height="50">
+  </a>
+  <a href="https://www.linkedin.com/in/malcom-myers-a347a0237/">
+    <img src="icon3.png" alt="Icon 1" class="icon" width="50" height="50">
+  </a>
+    
+</div>
+
+<div class ="status">
+
+  <h2></h2><span class="indicator"></span> Available for new opportunities </h2>
+
+</div>
+
+<div class ="footer">
+	Painting done by <a href="https://en.m.wikipedia.org/wiki/File:Johan_Christian_Dahl_-_View_of_Dresden_by_Moonlight_-_Google_Art_Project.jpg">Johan Christian Dahl</a>
+</div>
+
+
+</body>
+
+</html>
