@@ -3,11 +3,19 @@
 <head>
   <title>Welcome</title>
   <style>
-    body {
-      background-color: #1E1E1E;
-      background-size: cover;
+
+	
+    body 
+	{
+    background-color: #1E1E1E;
 	  margin: 0px;
+	  height: 100vh;
     }
+
+    ::selection {
+  background-color: #FFBF15; /* Vibrant yellow */
+  color: #301D7D; /* Deep blue/purple */
+}
 
     .startPage {
       position: absolute;
@@ -38,24 +46,93 @@
 	/*TEXT BOX STARTS HERE*/
 	
 	
-	
-	.textBox {
-    position: absolute;
-    left: 50%;		/*Center */
-	transform: translateX(-50%);
-    top: 40%;
-    color: white;
-    border: 1px solid white; /* Reduced border width */
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-right: 1%;
-    padding-left: 1%;
-	text-align: center;
-	
+  @keyframes colorChangingShadow {
+  0% {
+    box-shadow: 
+      5px 5px 0 2px #FFBF15, 
+      10px 10px 0 6px #F2541B, 
+      15px 15px 0 10px #C91853, 
+      20px 20px 0 14px #A8186E,
+      25px 25px 0 18px #6A0487,
+      30px 30px 0 22px #301D7D;
+  }
+  25% {
+    box-shadow: 
+      5px 5px 0 2px #FF5733, 
+      10px 10px 0 6px #FFC300, 
+      15px 15px 0 10px #DAF7A6, 
+      20px 20px 0 14px #FF6F61,
+      25px 25px 0 18px #6A0DAD,
+      30px 30px 0 22px #2C6E91;
+  }
+  50% {
+    box-shadow: 
+      5px 5px 0 2px #8AC6D1, 
+      10px 10px 0 6px #FF5733, 
+      15px 15px 0 10px #FFD54F, 
+      20px 20px 0 14px #FF9F80,
+      25px 25px 0 18px #DA70D6,
+      30px 30px 0 22px #4682B4;
+  }
+  75% {
+    box-shadow: 
+      5px 5px 0 2px #7FB77E, 
+      10px 10px 0 6px #F8B400, 
+      15px 15px 0 10px #F44174, 
+      20px 20px 0 14px #6A5ACD,
+      25px 25px 0 18px #9400D3,
+      30px 30px 0 22px #00CED1;
+  }
+  100% {
+    box-shadow: 
+      5px 5px 0 2px #FFBF15, 
+      10px 10px 0 6px #F2541B, 
+      15px 15px 0 10px #C91853, 
+      20px 20px 0 14px #A8186E,
+      25px 25px 0 18px #6A0487,
+      30px 30px 0 22px #301D7D;
+  }
 }
 
-	 .title h1 {
-      font-size: 24px; /* Adjust font size for mobile */
+
+
+    .textBox {
+      position: absolute;
+      left: 50%; /* Center */
+      transform: translateX(-50%);
+      top: 40%;
+      color: white;
+      border: 2px solid rgb(248, 232, 255);
+      padding: 1%;
+      text-align: center;
+      animation: colorChangingShadow 5s infinite;
+    }
+
+	 .title h1 
+	{
+    font-size:48px; /* Adjust font size for mobile */
+		color: #ffffff;
+    text-shadow: 2px 2px 0 #000000;
+		position: absolute;
+    left: 50%;		/*Center */
+		transform: translateX(-50%);
+    top: 15%;
+    }
+
+	.sub-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-10deg); /* Added tilt */
+      font-size: 24px;
+      color: #ffff55; /* Yellow color */
+      font-family: Arial, sans-serif;
+      text-shadow: 
+        -1px -1px 0 #000000, 
+        1px -1px 0 #000000, 
+        -1px 1px 0 #000000, 
+        1px 1px 0 #000000; /* Black outline */
+      text-align: center;
     }
 
 	.buttons{
@@ -77,6 +154,8 @@
 	.buttons :hover {
 	transform:scale(1.1);
 			z-index:2;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+
 	}
 	
 	.footer 
@@ -99,10 +178,7 @@
 	
 	}
 	
-	/* Media query for smaller screens 
-@media only screen and (max-width: 768px) {
-	body {
-    background-size: contain; Adjust background size to contain 
+	/* Media query for smaller screize to contain 
     background-position: center; Center the background image
   }
 	
@@ -132,11 +208,18 @@
     <p> </p>
   </div>
   
+  	<!--Title-->
+ 	<div class="title">
+		<h1> Welcome to my website </h2>
+	</div>
+	<!--Sub-Title-->
+	<div class="sub-title">
+		<h2></h2>
+	</div>
+
 	<div class="textBox">
 	
-	<div class="title">
-	<h1> Welcome to my website </h2>
-	</div>
+	
 	<div class ="buttons">
 	<a href="about_me.html">About me</a>
 	<a href="Resume_apply.pdf">Resume</a>
